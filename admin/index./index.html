@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827"><title>Wishlist Admin</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="admin-body">
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">✦</span><span>Wishlist Admin</span></a><a class="admin-link" href="../">View public page ↗</a></header>
+  <main class="admin-shell">
+    <section class="admin-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> PRIVATE MANAGEMENT</div><h1>Your wishlist,<br><span>your way.</span></h1><p>Add gifts, update details, and publish changes straight to your GitHub Pages site.</p></section>
+    <section id="setup-panel" class="panel">
+      <div class="panel-head"><div><h2>Connect your GitHub repository</h2><p>Use a fine-grained token with access to this repository only.</p></div><span class="panel-icon">⌘</span></div>
+      <div class="form-grid">
+        <label>GitHub username / organization<input id="gh-owner" placeholder="your-github-username"></label>
+        <label>Repository name<input id="gh-repo" placeholder="birthday-wishlist"></label>
+        <label>Branch<input id="gh-branch" value="main"></label>
+        <label>GitHub token<input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+      </div>
+      <label class="remember-row"><input id="remember-token" type="checkbox"> Remember my token on this device</label>
+      <div class="button-row"><button class="button button-primary" id="connect-btn">Connect & load wishlist</button><button class="button button-quiet" id="forget-token">Forget saved token</button></div>
+      <p class="fine-print">Your token is used in this browser to access the GitHub Contents API. It is never written into your website files. Anyone with access to this browser profile may be able to use a remembered token.</p>
+      <div id="connect-message" class="notice" role="status"></div>
+    </section>
+    <section id="workspace" hidden>
+      <div class="workspace-top"><div><h2>Manage gifts</h2><p id="repo-label" class="muted"></p></div><div class="button-row"><button class="button button-quiet" id="refresh-btn">↻ Refresh</button><button class="button button-quiet" id="disconnect-btn">Disconnect</button></div></div>
+      <div class="admin-columns">
+        <section class="panel editor-panel">
+          <div class="panel-head"><div><h2 id="editor-title">Add a gift</h2><p>Fill in as much or as little as you like.</p></div><span class="panel-icon">＋</span></div>
+          <form id="product-form">
+            <input type="hidden" id="product-id">
+            <label>Product name *<input id="p-name" required maxlength="100" placeholder="e.g. Wireless headphones"></label>
+            <div class="form-grid">
+              <label>Price (number)<input id="p-price" type="number" min="0" step="0.01" placeholder="49.99"></label>
+              <label>Currency<select id="p-currency"><option>USD</option><option>CAD</option><option>GBP</option><option>EUR</option><option>AUD</option></select></label>
+              <label>Quantity wanted<input id="p-quantity" type="number" min="1" step="1" value="1"></label>
+              <label>Priority<select id="p-priority"><option>High</option><option selected>Medium</option><option>Low</option></select></label>
+              <label>Category<input id="p-category" maxlength="40" placeholder="Gaming, Tech, etc."></label>
+              <label>Sort position<input id="p-order" type="number" step="1" value="0"></label>
+            </div>
+            <label>Description<textarea id="p-description" rows="3" placeholder="A little more about what you're looking for…"></textarea></label>
+            <label>Product image<input id="p-image-file" type="file" accept="image/*"></label>
+            <label>Or image URL<input id="p-image-url" type="url" placeholder="https://…"></label>
+            <div id="image-preview" class="image-preview" hidden></div>
+            <div class="links-heading"><strong>Purchase links</strong><button type="button" class="text-button" id="add-link">+ Add another link</button></div>
+            <div id="links-list"></div>
+            <label class="check-label"><input id="p-received" type="checkbox"> I have received this item (admin only)</label>
+            <div class="button-row"><button class="button button-primary" type="submit" id="save-product">Save gift</button><button class="button button-quiet" type="button" id="cancel-edit" hidden>Cancel edit</button></div>
+            <div id="save-message" class="notice" role="status"></div>
+          </form>
+        </section>
+        <section class="panel list-panel">
+          <div class="panel-head"><div><h2>Current gifts</h2><p>Only you can edit this list using your GitHub token.</p></div><span class="count-pill" id="admin-count">0</span></div>
+          <div id="admin-list" class="admin-list"></div>
+        </section>
+      </div>
+      <div class="privacy-note"><span>🔒</span><div><strong>Buyer privacy is built in.</strong><p>The public wishlist never shows received status, buyer names, reservations, or purchase activity. There are no buyer controls for marking gifts as bought.</p></div></div>
+    </section>
+    <footer class="site-footer"><span>Wishlist control room <span class="footer-star">✦</span></span><a href="../">Back to wishlist</a></footer>
+  </main>
+  <script src="../config.js"></script><script src="admin.js"></script>
+</body></html>
