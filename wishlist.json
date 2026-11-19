@@ -89,6 +89,24 @@
           "url": "https://www.amazon.com/API-Freshwater-Master-Test-Kit/dp/B00K004TNO/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Zk-h4Iz2VMFkV0oSigwUXp61DMP5KSqxwchCciV05-nodwx3_TRNztyxbZ048CFo2G-vlBt7iA7DJVZF6jyk2FLjzc0klQHqPAgQxCO8Gb42W2dC6qkD8sQjX5P_5_6NaWch8pfTWsP0W-0eTL2EGwwKMJiPrkRDfTACRIKJ-WtSIbvvcaI67rrZiM7PASzA0FfIAmpXXqa4HXP91BoSCjqYysrsZkOrcOdmZGuJCrS6UlT7TvTNQAjitzLG-NmOGvrja8Titpj2yBTJiCHH7rq5RbpJ1I5kxHf1o2WNRHE.YVTeeAyDpLXUb-GokSiu_AEWl4XzrMJXGMBA4LNtD3g&dib_tag=se&keywords=api+master+freshwater&qid=1795123155&sr=8-1"
         }
       ]
+    },
+    {
+      "id": "gift-1795123841122",
+      "name": "Cold Steel Tactical Katana Machete",
+      "price": 56.98,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Weapons",
+      "order": 1,
+      "description": "This is manufactured by Cold Steel, a great brand trusted by many for weapons and stuff. They make lots and lots of weapons including spears, axes, knives, swords, and more. I will probably add more of their stuff to my wishlist.",
+      "image": "images/1795123841138-e5t4se.png",
+      "links": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/Cold-Steel-CS-97TKMS-Tactical-Machete/dp/B0BXLM7W6B/ref=sr_1_4?crid=ZC5TVJXIL8PU&dib=eyJ2IjoiMSJ9.HGnlMN7CafYl1YkKPh0zB7GDbtCrcNFhiNJAHNeVsYLMTv2SE5oBR3XLCQbpFwzS9kdVkrUiW72ZH8vbh6-USAzJ-AIGLow_WG0qBHVrY57xkrWiuM_4JEDS3gmCcj05MWg0MEcj-Bg5euSbVHEO-xKvnXXEP-K_XtxaIydpN6VYwP3fDkwzqLx-SBkL6aCNyUoxjtmrh-VWULur9HOPgtwlsCQqxmdki_kl2Hb1Ev9jp-C2V5RTs5tQmy8_BPe0onsbY51HsszR-fy5Xpp5ITKQAWrSvIzfTFN3rPdJwIc.kSUYUikyzQV4wq5VBb8RatjX8RyMir28OXFt0LEG2nA&dib_tag=se&keywords=Cold+Steel&qid=1795122957&s=sporting-goods&sprefix=cold+steel+tactical+katana+machete%2Csporting%2C192&sr=1-4"
+        }
+      ]
     }
   ]
 }
