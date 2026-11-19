@@ -17,6 +17,24 @@
           "url": "https://ansgear.com/arcturus-lwt-mk-ii-cqb-10-sport-arc-se-aeg-airsoft-gun-starter-pack-black/"
         }
       ]
+    },
+    {
+      "id": "gift-1795119988594",
+      "name": "Turbo Shells",
+      "price": 8,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Low",
+      "category": "",
+      "order": 4,
+      "description": "Turbo shells that I can use for either breeding shell dwellers, decoration for my current tanks, calcium for my snails, or just shelf decoration (though I'd be surprised if I had empty shelf space for them).",
+      "image": "images/1795119988607-lcz4b3.png",
+      "links": [
+        {
+          "label": "CA Seashells",
+          "url": "https://caseashells.com/green-turbo-shells-1-lb/"
+        }
+      ]
     }
   ]
 }
