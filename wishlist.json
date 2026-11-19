@@ -1,3 +1,17 @@
 {
-  "products": []
+  "products": [
+    {
+      "id": "gift-1795118696135",
+      "name": "TEST ITEM",
+      "price": 44.7,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "",
+      "order": 0,
+      "description": "",
+      "image": null,
+      "links": []
+    }
+  ]
 }
