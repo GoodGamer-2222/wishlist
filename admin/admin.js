@@ -11,16 +11,22 @@
     if(s.token){$("gh-token").value=s.token;$("remember-token").checked=true}
   }
   function currentSettings(){return {owner:$("gh-owner").value.trim(),repo:$("gh-repo").value.trim(),branch:$("gh-branch").value.trim()||"main",token:$("gh-token").value.trim()}}
-  function api(path){return `https://api.github.com/repos/${encodeURIComponent(settings.owner)}/${encodeURIComponent(settings.repo)}/contents/${path}`}
+  function repoApi(){return `https://api.github.com/repos/${encodeURIComponent(settings.owner)}/${encodeURIComponent(settings.repo)}`}
+  function api(path){return `${repoApi()}/contents/${path}`}
   async function request(url,opts={}){
     const r=await fetch(url,{...opts,headers:{"Accept":"application/vnd.github+json","Authorization":`Bearer ${settings.token}`,"X-GitHub-Api-Version":"2022-11-28",...(opts.headers||{})}});
     const body=await r.json().catch(()=>({}));
-    if(!r.ok)throw new Error(body.message||`GitHub request failed (${r.status})`);
+    if(!r.ok){const error=new Error(`GitHub API ${r.status}: ${body.message||r.statusText||"Unknown error"}`);error.status=r.status;error.url=url;throw error;}
     return body;
+  }
+  async function verifyConnection(){
+    await request(repoApi());
+    const branch=await request(`${repoApi()}/branches/${encodeURIComponent(settings.branch)}`);
+    if(branch.name!==settings.branch)throw new Error(`The repository branch is ${branch.name}, not ${settings.branch}.`);
   }
   async function readFile(path){
     try{const f=await request(api(path)+`?ref=${encodeURIComponent(settings.branch)}`);return {text:decodeURIComponent(escape(atob(f.content.replace(/\n/g,"")))),sha:f.sha}}
-    catch(e){if(String(e.message).includes("Not Found"))return {text:null,sha:null};throw e}
+    catch(e){if(e.status===404)return {text:null,sha:null};throw e}
   }
   async function writeFile(path,content,sha,message){
     const body={message,content:btoa(unescape(encodeURIComponent(content))),branch:settings.branch};
@@ -42,6 +48,7 @@
     if(!settings.owner||!settings.repo||!settings.token){msg("connect-message","Please fill in your GitHub username, repository, and token.");return}
     msg("connect-message","Connecting…");$("connect-btn").disabled=true;
     try{
+      await verifyConnection();
       await loadWishlist();
       if($("remember-token").checked)localStorage.setItem(KEY,JSON.stringify(settings));
       else{const {owner,repo,branch}=settings;localStorage.setItem(KEY,JSON.stringify({owner,repo,branch}));}
@@ -98,9 +105,11 @@
       let image=$("p-image-url").value.trim()||editingImage;
       const file=$("p-image-file").files[0];if(file)image=await uploadImage(file);
       const p={id,name:$("p-name").value.trim(),price:$("p-price").value===""?null:Number($("p-price").value),currency:$("p-currency").value,quantity:Math.max(1,Number($("p-quantity").value)||1),priority:$("p-priority").value,category:$("p-category").value.trim(),order:Number($("p-order").value)||0,description:$("p-description").value.trim(),image,links:getLinks(),received:$("p-received").checked};
+      const previous=products;
       products=old?products.map(x=>x.id===id?p:x):[...products,p];
-      await publish();renderAdmin();resetForm();msg("save-message","Saved! GitHub Pages may take a minute or two to update.");
-    }catch(err){msg("save-message",err.message)}
+      try{await publish()}catch(err){products=previous;throw err}
+      renderAdmin();resetForm();msg("save-message","Saved! GitHub Pages may take a minute or two to update.");
+    }catch(err){msg("save-message",`${err.message}. Verify owner GoodGamer-2222, repository wishlist, branch main, and token Contents: Read and write.`)}
     finally{save.disabled=false}
   });
   async function publish(){
