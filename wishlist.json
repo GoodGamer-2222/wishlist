@@ -53,6 +53,24 @@
           "url": "https://akgelblaster.com/products/cyma-m4-gel-blaster-gun-gel-gun-usa-pr?variant=43062830301365"
         }
       ]
+    },
+    {
+      "id": "gift-1795122713258",
+      "name": "Korg Monotron Ribbon Synthesizer",
+      "price": 53.98,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Music",
+      "order": 3,
+      "description": "This is a synthesizer. Like a music kind of synthesizer. I've wanted one of these for a long time. I don't know how to play one, but it looks like it would be kind of like a piano. They seem really fun and can make really cool music.",
+      "image": "images/1795122713283-37co7j.png",
+      "links": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B00684KFAM/?coliid=I24XUHV59BFXOJ&colid=ZEENJPKYON6J&psc=1&ref_=list_c_wl_gv_ov_lig_pi_dp"
+        }
+      ]
     }
   ]
 }
