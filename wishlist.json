@@ -120,6 +120,24 @@
       "description": "Treats for the ducks. They will eat peas, pretty much any kind of bug larvae, and cooked oats. I said I wanted 1 but will take as many as you give me. They will eat just about as many treats as I give them.",
       "image": "images/1795124095522-4ypjet.png",
       "links": []
+    },
+    {
+      "id": "gift-1795124435194",
+      "name": "Cold Steel Gladius Machete",
+      "price": 49.99,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Weapons",
+      "order": 7,
+      "description": "This is made by Cold Steel, trusted by many for all sorts of weapons. It is a replica of a Roman sword used by foot soldiers.",
+      "image": "images/1795124435205-nr6jjo.png",
+      "links": [
+        {
+          "label": "Cold Steel",
+          "url": "https://www.coldsteel.com/gladius-machete/"
+        }
+      ]
     }
   ]
 }
