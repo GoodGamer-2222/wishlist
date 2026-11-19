@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Birthday Wishlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">✦</span><span id="site-title">Birthday Wishlist</span></a>
+    <div class="header-right"><span class="header-note" id="birthday-note"></span><a class="admin-link" href="admin/">Admin</a></div>
+  </header>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> THE WISHLIST</div>
+      <h1>A little list of<br><span>things I'd love.</span></h1>
+      <p class="hero-copy" id="intro-copy">A collection of birthday ideas. Thanks for taking a look!</p>
+      <div class="hero-meta"><span id="item-count">0 items</span><span class="meta-divider"></span><span id="total-value">Total listed value: —</span></div>
+    </section>
+    <section class="toolbar" aria-label="Wishlist controls">
+      <label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Find something…" autocomplete="off"></label>
+      <select id="category-filter" aria-label="Filter by category"><option value="">All categories</option></select>
+      <select id="sort" aria-label="Sort items">
+        <option value="custom">Featured order</option><option value="priority">Priority</option>
+        <option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option>
+        <option value="name">Name: A–Z</option>
+      </select>
+    </section>
+    <div id="status" class="status-line" role="status">Loading wishlist…</div>
+    <section id="wishlist" class="product-grid" aria-live="polite"></section>
+    <section id="empty-state" class="empty-state" hidden><div class="empty-icon">✧</div><h2>Nothing here just yet</h2><p>Check back soon!</p></section>
+    <footer class="site-footer"><span>Made with a little birthday excitement <span class="footer-star">✦</span></span><span id="footer-year"></span></footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
