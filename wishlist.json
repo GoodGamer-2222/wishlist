@@ -12,6 +12,24 @@
       "description": "",
       "image": null,
       "links": []
+    },
+    {
+      "id": "gift-1795119119146",
+      "name": "Arcturus MK-II CQB Airsoft AEG",
+      "price": 246.75,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Airsoft",
+      "order": 1,
+      "description": "This airsoft gun is great for beginners because it has MOSFET, programmable trigger modes, a precision rotary hopup, and a 350rd mag. Don't worry about legal stuff, shipping airsoft guns to Oregon is legal.",
+      "image": "images/1795119119157-h9opl3.png",
+      "links": [
+        {
+          "label": "ANS Gear",
+          "url": "https://ansgear.com/arcturus-lwt-mk-ii-cqb-10-sport-arc-se-aeg-airsoft-gun-starter-pack-black/"
+        }
+      ]
     }
   ]
 }
