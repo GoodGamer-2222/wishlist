@@ -156,6 +156,24 @@
           "url": "https://www.coldsteel.com/thai-machete/"
         }
       ]
+    },
+    {
+      "id": "gift-1795131900754",
+      "name": "Cold Steel Throwing Knives",
+      "price": 9.99,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Weapons",
+      "order": 2,
+      "description": "This is $9.99 for one throwing knife, also from Cold Steel. This knife has 5-star reviews and if you get 5-10 then it's 10% off meaning if you get 5 it would only be $44.96. If you got 10 it would be $89.91.",
+      "image": "images/1795131900769-8tei8g.png",
+      "links": [
+        {
+          "label": "Cold Steel",
+          "url": "https://www.coldsteel.com/mini-blades-throwing-knives/"
+        }
+      ]
     }
   ]
 }
