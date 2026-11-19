@@ -109,7 +109,11 @@
       products=old?products.map(x=>x.id===id?p:x):[...products,p];
       try{await publish()}catch(err){products=previous;throw err}
       renderAdmin();resetForm();msg("save-message","Saved! GitHub Pages may take a minute or two to update.");
-    }catch(err){msg("save-message",`${err.message}. Verify owner GoodGamer-2222, repository wishlist, branch main, and token Contents: Read and write.`)}
+    }catch(err){
+      console.error("Wishlist save failed:", err);
+      const detail = err?.message || (typeof err === "string" ? err : (() => { try { return JSON.stringify(err); } catch { return "Unknown save error"; } })()) || "Unknown save error";
+      msg("save-message",`${detail}. Check the browser console for details if this continues.`);
+    }
     finally{save.disabled=false}
   });
   async function publish(){
@@ -118,6 +122,9 @@
     const publicProducts=products.map(({received,...p})=>p);
     const content=JSON.stringify({products:publicProducts},null,2);
     const result=await writeFile("wishlist.json",content,dataSha,"Update birthday wishlist");
+    if(!result || !result.content || !result.content.sha){
+      throw new Error("GitHub accepted the save request but did not return the updated file SHA. Check the repository's wishlist.json file and try refreshing the admin page.");
+    }
     dataSha=result.content.sha;
   }
   async function deleteProduct(id){
