@@ -138,6 +138,24 @@
           "url": "https://www.coldsteel.com/gladius-machete/"
         }
       ]
+    },
+    {
+      "id": "gift-1795129618589",
+      "name": "Cold Steel Thai Machete",
+      "price": 49.99,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Weapons",
+      "order": 8,
+      "description": "Cold Steel manufactures this beautiful machete modeled after Thai style swords. It is considered a hand-and-a-half sword because it is light enough for one hand but has a long enough handle you can use two hands if needed.",
+      "image": "images/1795129618602-ghlq19.png",
+      "links": [
+        {
+          "label": "Cold Steel",
+          "url": "https://www.coldsteel.com/thai-machete/"
+        }
+      ]
     }
   ]
 }
