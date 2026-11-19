@@ -1,19 +1,6 @@
 {
   "products": [
     {
-      "id": "gift-1795118696135",
-      "name": "TEST ITEM",
-      "price": 44.7,
-      "currency": "USD",
-      "quantity": 1,
-      "priority": "Medium",
-      "category": "",
-      "order": 0,
-      "description": "",
-      "image": null,
-      "links": []
-    },
-    {
       "id": "gift-1795119119146",
       "name": "Arcturus MK-II CQB Airsoft AEG",
       "price": 246.75,
