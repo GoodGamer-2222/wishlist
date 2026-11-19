@@ -45,9 +45,14 @@
       "priority": "Medium",
       "category": "Airsoft",
       "order": 2,
-      "description": "",
-      "image": null,
-      "links": []
+      "description": "This is a gel blaster, so it shoots the soft little jelly balls. It shoots at about 230 FPS, so not as good as airsoft but still good enough to hit something. It comes with the gun, 3 mags, glasses, a battery and charger, and the owner's manual.",
+      "image": "images/1795122391850-25xttp.png",
+      "links": [
+        {
+          "label": "AK Gel Blaster",
+          "url": "https://akgelblaster.com/products/cyma-m4-gel-blaster-gun-gel-gun-usa-pr?variant=43062830301365"
+        }
+      ]
     }
   ]
 }
