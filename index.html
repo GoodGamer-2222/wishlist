@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="./"><span class="brand-mark">✦</span><span id="site-title">Birthday Wishlist</span></a>
+    <a class="brand" href="./"><span class="brand-mark">B</span><span id="site-title">Birthday Wishlist</span></a>
     <div class="header-right"><span class="header-note" id="birthday-note"></span><a class="admin-link" href="admin/">Admin</a></div>
   </header>
   <main class="page-shell">
@@ -30,9 +30,27 @@
     </section>
     <div id="status" class="status-line" role="status">Loading wishlist…</div>
     <section id="wishlist" class="product-grid" aria-live="polite"></section>
-    <section id="empty-state" class="empty-state" hidden><div class="empty-icon">✧</div><h2>Nothing here just yet</h2><p>Check back soon!</p></section>
-    <footer class="site-footer"><span>Made with a little birthday excitement <span class="footer-star">✦</span></span><span id="footer-year"></span></footer>
+    <section id="empty-state" class="empty-state" hidden><h2>Nothing here just yet</h2><p>Check back soon!</p></section>
+    <footer class="site-footer"><span>Made with a little birthday excitement</span><span id="footer-year"></span></footer>
   </main>
+  <dialog class="product-viewer" id="product-viewer" aria-label="Product details">
+    <div class="viewer-shell">
+      <button class="viewer-close" id="viewer-close" type="button" aria-label="Close product details">×</button>
+      <button class="viewer-arrow viewer-prev" id="viewer-prev" type="button" aria-label="Previous product">‹</button>
+      <div class="viewer-layout">
+        <div class="viewer-photo-wrap"><img id="viewer-image" alt=""><div class="viewer-image-placeholder" id="viewer-image-placeholder" hidden>No photo available</div></div>
+        <div class="viewer-info">
+          <div class="card-top"><span class="category-tag" id="viewer-category"></span><span class="priority-tag" id="viewer-priority"></span></div>
+          <h2 id="viewer-title"></h2>
+          <p class="viewer-description" id="viewer-description"></p>
+          <div class="price-row"><span class="price" id="viewer-price"></span><span class="quantity" id="viewer-quantity"></span></div>
+          <div class="viewer-links" id="viewer-links"></div>
+          <div class="viewer-position" id="viewer-position"></div>
+        </div>
+      </div>
+      <button class="viewer-arrow viewer-next" id="viewer-next" type="button" aria-label="Next product">›</button>
+    </div>
+  </dialog>
   <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
