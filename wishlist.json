@@ -75,7 +75,7 @@
     {
       "id": "gift-1795123289885",
       "name": "API Master Test Kit",
-      "price": null,
+      "price": 34.99,
       "currency": "USD",
       "quantity": 1,
       "priority": "High",
@@ -85,8 +85,8 @@
       "image": "images/1795123289897-iyyjt4.png",
       "links": [
         {
-          "label": "Amazon",
-          "url": "https://www.amazon.com/API-Freshwater-Master-Test-Kit/dp/B00K004TNO/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Zk-h4Iz2VMFkV0oSigwUXp61DMP5KSqxwchCciV05-nodwx3_TRNztyxbZ048CFo2G-vlBt7iA7DJVZF6jyk2FLjzc0klQHqPAgQxCO8Gb42W2dC6qkD8sQjX5P_5_6NaWch8pfTWsP0W-0eTL2EGwwKMJiPrkRDfTACRIKJ-WtSIbvvcaI67rrZiM7PASzA0FfIAmpXXqa4HXP91BoSCjqYysrsZkOrcOdmZGuJCrS6UlT7TvTNQAjitzLG-NmOGvrja8Titpj2yBTJiCHH7rq5RbpJ1I5kxHf1o2WNRHE.YVTeeAyDpLXUb-GokSiu_AEWl4XzrMJXGMBA4LNtD3g&dib_tag=se&keywords=api+master+freshwater&qid=1795123155&sr=8-1"
+          "label": "Fifty 1 Elite",
+          "url": "https://www.fifty1elite.com/shop/p/api-freshwater-master-test-kit?gad_source=4&gad_campaignid=24435593230&gbraid=0AAAABE56EL1-8-JGgMLs9WJOyudv2pRNC&gclid=Cj0KCQiA2frXBhC_ARIsAPTFcdOvhcgMLxDLifXzPDTbEVJXYOOaQGz-6piVQBSDdUhDbevojuekKHUaAoNjEALw_wcB"
         }
       ]
     },
