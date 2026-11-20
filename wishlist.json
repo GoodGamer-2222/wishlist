@@ -210,6 +210,24 @@
           "url": "https://www.amazon.com/dp/B0BS4CQYZY/ref=olp-opf-redir?aod=1&condition=new&ref=clp_hp_h_new&th=1"
         }
       ]
+    },
+    {
+      "id": "gift-1795135850602",
+      "name": "Traxxas Xmaxx with Batteries and Charger",
+      "price": 1699.9,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "High",
+      "category": "RC Cars",
+      "order": -3,
+      "description": "This is something I have wanted for a very very long time: a HUGE rc car. This one is 1/5 scale I'm pretty sure. It is an absolute GIANT. Its huge. Like, BIG. And fast! It only goes about 40mph out of the box, but it can go up to 80+mph with aftermarket stuff. If purchasing PLEASE ENSURE YOU SELECT THE OPTION \"Vehichle with Dual 4s Completer\" OR PURCHASE COMPATIBLE BATTERIES AND A CHARGER!!! But even if you don't I will be super happy.",
+      "image": "images/1795135850615-nz5m4w.png",
+      "links": [
+        {
+          "label": "Traxxas",
+          "url": "https://traxxas.com/x-maxx-77096-4"
+        }
+      ]
     }
   ]
 }
