@@ -192,6 +192,24 @@
           "url": "https://www.amazon.com/dp/B0D328X4DS/?coliid=I3C0G5R4D7UWS&colid=ZEENJPKYON6J&psc=1&ref_=list_c_wl_gv_ov_lig_pi_dp"
         }
       ]
+    },
+    {
+      "id": "gift-1795133077819",
+      "name": "Lancer Tactical Gen 2 M4 AEG",
+      "price": 215.95,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "Medium",
+      "category": "Airsoft",
+      "order": 5,
+      "description": "It is blue! And it comes with the gun, a mag, a battery, a charger, a bag of BBs, a couple patches, and a speed loader.",
+      "image": "images/1795133077825-huj7a5.png",
+      "links": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/dp/B0BS4CQYZY/ref=olp-opf-redir?aod=1&condition=new&ref=clp_hp_h_new&th=1"
+        }
+      ]
     }
   ]
 }
