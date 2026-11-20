@@ -228,6 +228,24 @@
           "url": "https://traxxas.com/x-maxx-77096-4"
         }
       ]
+    },
+    {
+      "id": "gift-1795136076058",
+      "name": "Traxxas Xmaxx Ultimate with Batteries and Charger",
+      "price": 2099.9,
+      "currency": "USD",
+      "quantity": 1,
+      "priority": "High",
+      "category": "RC Cars",
+      "order": 13,
+      "description": "I have always wanted a huge rc car that goes super fast. This one is 30 inches long and goes about 40mph right out of the box.",
+      "image": "images/1795136076065-i5gpdb.png",
+      "links": [
+        {
+          "label": "Traxxas",
+          "url": "https://traxxas.com/x-maxx-ultimate-77097-4"
+        }
+      ]
     }
   ]
 }
