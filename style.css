@@ -27,3 +27,5 @@
 .viewer-close:hover,.viewer-arrow:not(:disabled):hover{background:#29415f;border-color:#5579a6}
 @media(max-width:700px){.viewer-shell{padding:58px 48px 22px}.viewer-layout{grid-template-columns:1fr;gap:18px}.viewer-photo-wrap{height:45vh;min-height:200px}.viewer-info{padding:0}.viewer-info h2{margin-top:12px}.viewer-position{margin-top:12px}}
 @media(max-width:420px){.viewer-shell{padding-left:42px;padding-right:42px}.viewer-arrow{width:32px;height:46px}.viewer-prev{left:5px}.viewer-next{right:5px}}
+
+.viewer-meta,.card-meta{color:var(--muted);font-size:.85rem;line-height:1.5;margin-top:.65rem}
